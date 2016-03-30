@@ -1,0 +1,10 @@
+<h3>Country: {{city.country}}</h3>
+<h4>Available rentals in {{city.name}}:</h4>
+<ul class="list-group">
+  {{#each city.rentals as |rental|}}
+  {{rental-tile rental=rental}}
+  {{/each}}
+</ul>
+
+<hr>
+<button class="btn btn-danger" {{action 'delete' city}}>Delete City</button>
