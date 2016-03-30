@@ -30,5 +30,13 @@
   "type": "Weather",
   "date": "2016-04-13",
   "body": "Typhoon set to hit Oregon Coast. Go to the mountains instead."
-}]
+}],
+
+"cities": [{
+    "name": "Portland",
+    "country": "USA"
+  }, {
+    "name": "Seattle",
+    "country": "USA"
+  }]
 }
