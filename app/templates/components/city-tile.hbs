@@ -1,8 +1,10 @@
-<h3>Country: {{city.country}}</h3>
-<h4>Available rentals in {{city.name}}:</h4>
+<h4>Location: {{fullLocation}}</h4>
+
+<h3>Rentals available in {{city.name}}:</h3>
+
 <ul class="list-group">
-  {{#each city.rentals as |rental|}}
-  {{rental-tile rental=rental}}
+  {{#each sortedRentals as |rental|}}
+    {{rental-tile rental=rental}}
   {{/each}}
 </ul>
 
