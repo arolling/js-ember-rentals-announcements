@@ -14,8 +14,14 @@ export default Ember.Component.extend({
         type: this.get('type'),
         image: this.get('image'),
         bedrooms: this.get('bedrooms'),
+        cost: this.get('cost')
       };
       this.set('addNewRental', false);
+      this.set('owner', '');
+      this.set('type', '');
+      this.set('image', '');
+      this.set('bedrooms', '');
+      this.set('cost', '');
       this.sendAction('save2', params);
     }
   }

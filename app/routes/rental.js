@@ -16,9 +16,7 @@ export default Ember.Route.extend({
     },
 
     destroyRental(rental) {
-      rental.destroyRecord().then(function(){
-        city.save();
-      });
+      rental.destroyRecord();
       this.transitionTo('index');
     }
   }
