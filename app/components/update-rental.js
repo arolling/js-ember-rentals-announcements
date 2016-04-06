@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         type: this.get('type'),
         image: this.get('image'),
         bedrooms: this.get('bedrooms'),
-        cost: this.get('cost')
+        cost: parseInt(this.get('cost'))
       };
       this.set('owner', '');
       this.set('type', '');

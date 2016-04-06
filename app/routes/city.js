@@ -2,7 +2,13 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params){
+    console.log(params);
     return this.store.findRecord('city', params.city_id);
+  },
+
+  afterModel: function(model){
+    //console.log(model.get('rentals').objectAt(1));
+    return model.get('rentals');
   },
 
   actions: {

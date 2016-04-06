@@ -20,7 +20,16 @@
         </div>
         <div class="form-group">
           <label for="cost">Cost per night</label>
-          {{input class="form-control" type="number" value=cost id="cost"}}
+          {{input class="form-control" value=cost id="cost"}}
+        </div>
+        <div class="form-group">
+          <label for="latitude">Latitude</label>
+          {{input class="form-control" value=latitude id="latitude"}}
+        </div>
+
+        <div class="form-group">
+          <label for="longitude">Longitude</label>
+          {{input class="form-control" value=longitude id="longitude"}}
         </div>
 
         <button class="btn btn-success" {{action 'save1'}}>Save</button>
