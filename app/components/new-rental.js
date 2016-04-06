@@ -25,6 +25,8 @@ export default Ember.Component.extend({
       this.set('image', '');
       this.set('bedrooms', '');
       this.set('cost', '');
+      this.set('latitude', '');
+      this.set('longitude', '');
       this.sendAction('save2', params);
     }
   }
